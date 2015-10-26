@@ -24,6 +24,8 @@ import android.view.KeyEvent;
 
 import com.android.internal.os.DeviceKeyHandler;
 
+import android.provider.Settings;
+
 public class KeyHandler implements DeviceKeyHandler {
     private static final String TAG = KeyHandler.class.getSimpleName();
 
@@ -76,6 +78,12 @@ public class KeyHandler implements DeviceKeyHandler {
     }
 
     private void doHapticFeedback(VibrationEffect effect) {
+        boolean enabled = Settings.System.getInt(mContext.getContentResolver(),
+                Settings.System.TOUCHSCREEN_GESTURE_HAPTIC_FEEDBACK, 1) != 0;
+        if (!enabled) {
+            return;
+        }
+
         if (mVibrator != null && mVibrator.hasVibrator()) {
             mVibrator.vibrate(effect);
         }
