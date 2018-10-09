@@ -20,6 +20,9 @@ LOCAL_STATIC_ANDROID_LIBRARIES := \
 LOCAL_RESOURCE_DIR := \
     $(LOCAL_PATH)/res
 
+LOCAL_STATIC_JAVA_LIBRARIES := \
+    vendor.oneplus.hardware.camera-V1.0-java
+
 LOCAL_PROGUARD_FLAG_FILES := proguard.flags
 
 include frameworks/base/packages/SettingsLib/common.mk

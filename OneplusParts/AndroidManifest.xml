@@ -95,5 +95,7 @@
             android:theme="@style/Theme.Main">
         </activity>
 
+        <activity android:name=".device.KeyHandler" />
+
     </application>
 </manifest>
