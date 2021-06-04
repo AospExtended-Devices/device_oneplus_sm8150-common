@@ -16,7 +16,7 @@
      limitations under the License.
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="org.lineageos.settings.doze"
+    package="com.oneplusparts.settings"
     android:versionCode="1"
     android:versionName="1.0"
     android:sharedUserId="android.uid.system">
@@ -26,13 +26,43 @@
 
     <protected-broadcast android:name="com.android.systemui.doze.pulse" />
 
-    <uses-sdk
-        android:minSdkVersion="24"
-        android:targetSdkVersion="24"/>
 
     <application
-        android:label="@string/device_settings_app_name"
-        android:persistent="true">
+        android:icon="@android:drawable/sym_def_app_icon"
+        android:label="@string/oneplusparts"
+        android:theme="@style/Theme.Main"
+        android:persistent="true"
+        >
+
+        <activity
+            android:name=".OneplusPartsActivity"
+            android:label="@string/oneplusparts"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity-alias
+            android:name=".OneplusParts"
+            android:label="@string/oneplusparts"
+            android:targetActivity="OneplusPartsActivity"
+            android:icon="@drawable/ic_oneplusparts">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+                <action android:name="com.android.settings.action.EXTRA_SETTINGS" />
+            </intent-filter>
+            <meta-data
+                android:name="com.android.settings.bg.hint"
+                android:resource="@color/homepage_oneplusparts_background" />
+            <meta-data
+                android:name="com.android.settings.category"
+                android:value="com.android.settings.category.ia.homepage" />
+            <meta-data 
+                android:name="com.android.settings.summary"
+                android:resource="@string/oneplusparts_summary" />
+        </activity-alias>
 
         <receiver android:name=".BootCompletedReceiver">
             <intent-filter>
@@ -41,18 +71,14 @@
             </intent-filter>
         </receiver>
 
-        <service android:name=".DozeService"
+        <service android:name=".doze.DozeService"
                  android:permission="OneplusDozeService">
         </service>
 
         <activity
-            android:name=".DozeSettingsActivity"
+            android:name=".doze.DozeSettingsActivity"
             android:label="@string/ambient_display_title"
             android:theme="@style/Theme.Main">
-            <intent-filter>
-                <action android:name="org.lineageos.settings.device.DOZE_SETTINGS" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
         </activity>
 
     </application>

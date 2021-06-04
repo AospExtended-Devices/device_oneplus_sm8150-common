@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package org.lineageos.settings.doze;
+package com.oneplusparts.settings.doze;
 
 import android.content.Context;
 import android.content.Intent;
@@ -55,7 +55,7 @@ public final class Utils {
                 UserHandle.CURRENT);
     }
 
-    protected static void checkDozeService(Context context) {
+    public static void checkDozeService(Context context) {
         if (isDozeEnabled(context) && !isAlwaysOnEnabled(context) && areGesturesEnabled(context)) {
             startService(context);
         } else {

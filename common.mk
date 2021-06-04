@@ -227,9 +227,12 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.display.mapper@3.0.vendor \
     vendor.qti.hardware.display.mapper@4.0.vendor
 
-# Doze
+# OneplusParts
 PRODUCT_PACKAGES += \
-    OnePlusDoze
+    OneplusParts
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/privapp-permissions-oneplusparts.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-oneplusparts.xml
 
 # DRM
 PRODUCT_PACKAGES += \
