@@ -1,0 +1,2 @@
+# Allow platform_app to read, open and get attributes of sysfs_graphics
+allow platform_app sysfs_graphics:file { getattr open read };
