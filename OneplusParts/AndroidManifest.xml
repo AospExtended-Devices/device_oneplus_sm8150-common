@@ -21,11 +21,13 @@
     android:versionName="1.0"
     android:sharedUserId="android.uid.system">
 
+<uses-permission android:name="android.permission.INTERACT_ACROSS_USERS" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
     <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
 
     <protected-broadcast android:name="com.android.systemui.doze.pulse" />
-
+    <protected-broadcast android:name="com.oneplusparts.settings.UPDATE_SETTINGS" />
 
     <application
         android:icon="@android:drawable/sym_def_app_icon"
@@ -71,6 +73,12 @@
             </intent-filter>
         </receiver>
 
+        <receiver android:name=".Startup" >
+            <intent-filter android:priority="100" >
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
         <service android:name=".doze.DozeService"
                  android:permission="OneplusDozeService">
         </service>
@@ -78,6 +86,12 @@
         <activity
             android:name=".doze.DozeSettingsActivity"
             android:label="@string/ambient_display_title"
+            android:theme="@style/Theme.Main">
+        </activity>
+
+        <activity
+            android:name=".touch.TouchscreenGestureSettings"
+            android:label="@string/touchscreen_gesture_settings_title"
             android:theme="@style/Theme.Main">
         </activity>
 

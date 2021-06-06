@@ -227,10 +227,6 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.display.mapper@3.0.vendor \
     vendor.qti.hardware.display.mapper@4.0.vendor
 
-# OneplusParts
-PRODUCT_PACKAGES += \
-    OneplusParts
-
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/privapp-permissions-oneplusparts.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-oneplusparts.xml
 
@@ -355,6 +351,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_BOOT_JARS += \
     oneplus-fwk.oneplus_msmnile
 
+# OneplusParts
+PRODUCT_PACKAGES += \
+    OneplusParts \
+    tri-state-key_daemon
+
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power-service-qti \
@@ -427,12 +428,7 @@ PRODUCT_COPY_FILES += \
 
 # Touch
 PRODUCT_PACKAGES += \
-    vendor.lineage.touch@1.0-service.oneplus_msmnile
-
-# tri-state key
-PRODUCT_PACKAGES += \
-    KeyHandler \
-    tri-state-key_daemon
+    vendor.lineage.touch@1.0-service.oneplus_msmnile  
 
 # Update engine
 PRODUCT_PACKAGES += \

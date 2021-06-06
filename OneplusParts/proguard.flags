@@ -6,3 +6,9 @@
 -keep class com.oneplusparts.settings.doze.* {
   *;
 }
+-keep class com.oneplusparts.settings.touch.* {
+  *;
+}
+-keep class com.oneplusparts.settings.device.* {
+  *;
+}
