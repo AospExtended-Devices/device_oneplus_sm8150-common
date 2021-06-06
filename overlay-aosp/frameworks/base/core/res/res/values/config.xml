@@ -110,4 +110,7 @@
 
     <!-- Defines custom Vendor sensor for pocket detection. -->
     <string name="config_pocketJudgeVendorSensorName">oneplus.sensor.pocket</string>
+
+    <!-- Default navigation mode -->
+    <integer name="config_navBarInteractionMode">2</integer>
 </resources>
