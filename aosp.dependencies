@@ -12,9 +12,9 @@
     "branch":      "lineage-18.1"
   },
   {
-    "remote":      "github",
-    "repository":  "TheMuppets/proprietary_vendor_oneplus",
+    "remote":      "aex-devices",
+    "repository":  "proprietary_vendor_oneplus",
     "target_path": "vendor/oneplus",
-    "branch":      "lineage-18.1"
+    "branch":      "11.x"
   }
 ]
