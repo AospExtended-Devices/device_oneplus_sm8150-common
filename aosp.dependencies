@@ -1,9 +1,9 @@
 [
   {
-    "remote":      "lineage",
-    "repository":  "android_kernel_oneplus_sm8150",
+    "remote":      "aex-devices",
+    "repository":  "kernel_oneplus_sm8150",
     "target_path": "kernel/oneplus/sm8150",
-    "branch":      "lineage-18.1"
+    "branch":      "11.x"
   },
   {
     "remote":      "lineage",
