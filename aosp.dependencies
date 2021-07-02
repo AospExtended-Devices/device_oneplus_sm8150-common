@@ -6,15 +6,21 @@
     "branch":      "11.x"
   },
   {
-    "remote":      "lineage",
-    "repository":  "android_device_oneplus_common",
+    "remote":      "aex-devices",
+    "repository":  "device_oneplus_common",
     "target_path": "device/oneplus/common",
-    "branch":      "lineage-18.1"
+    "branch":      "11.x"
   },
   {
     "remote":      "aex-devices",
     "repository":  "proprietary_vendor_oneplus",
     "target_path": "vendor/oneplus",
+    "branch":      "11.x"
+  },
+  {
+    "remote":      "aex-lab",
+    "repository":  "platform_vendor_oneplus_apps",
+    "target_path": "vendor/oneplus/apps",
     "branch":      "11.x"
   }
 ]
