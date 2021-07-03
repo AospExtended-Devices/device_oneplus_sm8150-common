@@ -22,5 +22,11 @@
     "repository":  "platform_vendor_oneplus_apps",
     "target_path": "vendor/oneplus/apps",
     "branch":      "11.x"
+  },
+  {
+    "remote":      "private",
+    "repository":  "AospExtended-Devices/platform_external_avb-keys",
+    "target_path": "external/avb-keys",
+    "branch":      "master"
   }
 ]
