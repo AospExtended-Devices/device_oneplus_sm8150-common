@@ -114,4 +114,6 @@
     <!-- Default navigation mode -->
     <integer name="config_navBarInteractionMode">2</integer>
 
+    <string name="config_pocketJudgeVendorProximitySensorName">oneplus.sensor.infrared.proximity</string>
+
 </resources>
