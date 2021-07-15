@@ -192,6 +192,8 @@ public class TouchscreenGestureSettings extends PreferenceActivity
                         return R.drawable.ic_gesture_action_volume_down;
                     case Constants.ACTION_VOLUME_UP:
                         return R.drawable.ic_gesture_action_volume_up;
+                    case Constants.ACTION_AMBIENT_DISPLAY:
+                        return R.drawable.ic_gesture_action_ambient_display;
                     default:
                         // No gesture action
                         return R.drawable.ic_gesture_action_none;
