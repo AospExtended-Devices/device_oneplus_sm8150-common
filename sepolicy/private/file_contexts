@@ -2,3 +2,5 @@
 /system/bin/als_correction_service    u:object_r:als_correction_service_exec:s0
 
 /data/misc/aex/client_package_name    u:object_r:aex_data_file:s0
+
+/sys/devices/platform/soc/89c000.i2c/i2c-2/2-005a/leds/vibrator(/.*)? u:object_r:sysfs_vibrator:s0

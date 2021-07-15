@@ -27,15 +27,25 @@ import androidx.preference.PreferenceManager;
 import androidx.preference.PreferenceScreen;
 
 import com.oneplusparts.settings.doze.DozeSettingsActivity;
+import com.oneplusparts.settings.preference.VibratorStrengthPreference;
 
 public class OneplusParts extends PreferenceFragment implements
         Preference.OnPreferenceChangeListener {
 
+    private static final String KEY_CATEGORY_VIBRATOR = "vibrator";
+
+    public static final String KEY_VIBSTRENGTH = "vib_strength";
+    public static final String KEY_SETTINGS_PREFIX = "device_setting_";
+
+
+    private VibratorStrengthPreference mVibratorStrength;
 
     @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
         final SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this.getContext());
         setPreferencesFromResource(R.xml.oneplusparts, rootKey);
+        final PreferenceScreen prefScreen = getPreferenceScreen();
+
         Preference mDozePref = findPreference("doze");
         mDozePref.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
             @Override
@@ -45,6 +55,13 @@ public class OneplusParts extends PreferenceFragment implements
                 return true;
             }
         });
+
+        final PreferenceCategory vibCategory =
+                (PreferenceCategory) prefScreen.findPreference(KEY_CATEGORY_VIBRATOR);
+        mVibratorStrength = (VibratorStrengthPreference) findPreference(KEY_VIBSTRENGTH);
+        if (!VibratorStrengthPreference.isSupported()) {
+            prefScreen.removePreference(vibCategory);
+        }
     }
 
 

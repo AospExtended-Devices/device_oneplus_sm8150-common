@@ -94,4 +94,10 @@
     <string name="touchscreen_gesture_action_volume_down">Lower media volume</string>
     <string name="touchscreen_gesture_action_volume_up">Raise media volume</string>
     <string name="touchscreen_gesture_action_ambient_display">Show ambient display</string>
+
+    <!-- Vibration Strength -->
+    <string name="category_vibrator">Vibrator</string>
+    <string name="vib_strength_title_head">Strength</string>
+    <string name="vib_strength_summary_head">Define the strength of the vibrator</string>
+    <string name="vib_test">Test</string>
 </resources>

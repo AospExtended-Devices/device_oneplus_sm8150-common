@@ -113,4 +113,5 @@
 
     <!-- Default navigation mode -->
     <integer name="config_navBarInteractionMode">2</integer>
+
 </resources>
