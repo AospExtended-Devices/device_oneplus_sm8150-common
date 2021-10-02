@@ -1,19 +1,19 @@
 [
   {
-    "remote":      "aex-devices",
-    "repository":  "kernel_oneplus_sm8150",
+    "remote":      "private",
+    "repository":  "AospExtended-Devices/kernel_oneplus_sm8150",
     "target_path": "kernel/oneplus/sm8150",
     "branch":      "11.x"
   },
   {
-    "remote":      "aex-devices",
-    "repository":  "device_oneplus_common",
+    "remote":      "private",
+    "repository":  "AospExtended-Devices/device_oneplus_common",
     "target_path": "device/oneplus/common",
     "branch":      "11.x"
   },
   {
-    "remote":      "aex-devices",
-    "repository":  "proprietary_vendor_oneplus",
+    "remote":      "private",
+    "repository":  "AospExtended-Devices/proprietary_vendor_oneplus",
     "target_path": "vendor/oneplus",
     "branch":      "11.x"
   },
