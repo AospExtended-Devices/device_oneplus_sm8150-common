@@ -1,5 +1,3 @@
 # Allow platform_app to read, open and get attributes of sysfs_graphics
 allow platform_app sysfs_graphics:file { getattr open read };
 
-allow platform_app hal_dms_hwservice:hwservice_manager find;
-allow platform_app hal_dms_default:binder { call transfer };
