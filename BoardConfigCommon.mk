@@ -145,7 +145,7 @@ TARGET_USES_AOSP_RECOVERY := true
 ENABLE_VENDOR_RIL_SERVICE := true
 
 # Security patch level
-VENDOR_SECURITY_PATCH := 2021-08-01
+VENDOR_SECURITY_PATCH := 2021-10-01
 
 # SELinux
 include device/qcom/sepolicy_vndr/SEPolicy.mk
