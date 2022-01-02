@@ -348,6 +348,11 @@ PRODUCT_PACKAGES += \
     libstagefrighthw \
     libstagefright_softomx.vendor
 
+# OnePlus Apps
+PRODUCT_PACKAGES += \
+    OnePlusCameraOverlay \
+    OnePlusGalleryOverlay
+
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power-service-qti \
