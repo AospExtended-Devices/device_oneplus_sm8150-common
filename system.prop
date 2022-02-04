@@ -1,3 +1,6 @@
+#ADB
+ro.adb.secure.recovery=0
+
 # Audio
 persist.vendor.audio.hac.enable=false
 ro.audio.monitorRotation=true
