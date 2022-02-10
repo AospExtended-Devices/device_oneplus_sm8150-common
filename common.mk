@@ -85,7 +85,7 @@ PRODUCT_PACKAGES += \
     AntHalService-Soong \
     com.dsi.ant@1.0.vendor
 
-# YAAP Device Settings
+# AEX Device Settings
 PRODUCT_PACKAGES += \
     DeviceSettings
 
