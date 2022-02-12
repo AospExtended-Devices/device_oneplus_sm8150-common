@@ -395,6 +395,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     tri-state-key_daemon
 
+# UDFPS Animations and Icons
+PRODUCT_PACKAGES += \
+    UdfpsResources
+
 # Update engine
 PRODUCT_PACKAGES += \
     update_engine \
