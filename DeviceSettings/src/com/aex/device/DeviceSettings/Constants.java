@@ -86,7 +86,7 @@ public class Constants {
         sKeyMap.put(602, NOTIF_SLIDER_MIDDLE_KEY);
         sKeyMap.put(601, NOTIF_SLIDER_BOTTOM_KEY);
 
-        sKeyDefaultMap.put(NOTIF_SLIDER_TOP_KEY, KEY_VALUE_TOTAL_SILENCE);
+        sKeyDefaultMap.put(NOTIF_SLIDER_TOP_KEY, KEY_VALUE_SILENT);
         sKeyDefaultMap.put(NOTIF_SLIDER_MIDDLE_KEY, KEY_VALUE_VIBRATE);
         sKeyDefaultMap.put(NOTIF_SLIDER_BOTTOM_KEY, KEY_VALUE_NORMAL);
     }
